@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Timings & Dance Forms</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* CSS Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #EDC7B7;
+            margin: 0;
+        }
+
+        .navbar {
+            padding: 20px;
+            background-color: #123C69; /* Purple color */
+        }
+
+        .navbar-brand, .nav-link {
+            color: #fff !important;
+            margin-left: 15px;
+        }
+
+        .footer {
+            background-color: #123C69; /* Purple background */
+            color: white; /* White text color */
+            text-align: center;
+            padding: 15px 0;
+            position: relative;
+            width: 100%;
+        }
+
+        .footer p {
+            margin: 0;
+            font-size: 1em;
+        }
+
+        .container {
+            width: 90%;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #EDC7B7;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .timing-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 40px;
+        }
+
+        .timing-table th, .timing-table td {
+            padding: 12px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+
+        .timing-table th {
+            background-color: #f7d7b4;
+            color: #333;
+        }
+
+        .timing-table td {
+            background-color: #fff;
+        }
+
+        .timing-table tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        .category {
+            background-color: #f9f9f9;
+            border-bottom: 2px solid #ddd;
+        }
+
+        .category h4 {
+            margin: 0;
+            padding: 10px;
+            background-color: #f7d7b4;
+            color: #333;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            .timing-table th, .timing-table td {
+                font-size: 14px;
+                padding: 8px;
+            }
+
+            .container {
+                padding: 10px;
+            }
+
+            .timing-table {
+                display: block;
+                overflow-x: auto;
+                white-space: nowrap;
+            }
+        }
+        h3{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#">
+            <img class="logo" src="bhuumika/Logo.png" alt="Dance Academy Logo" style="height: 70px;">
+            <span> Dance Academy</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="service.html">Our Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="instructorsss.html">Our Instructors</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.php">Contact Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="schedule.html">Schedule </a></li>
+                <li class="nav-item"><a class="nav-link" href="register.php">Register</a></li>
+                <li class="nav-item"><a class="nav-link" href="login.php">Login</a></li>
+               
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Class Timings Content -->
+    <div class="container">
+        <h3>TIMINGS</h3>
+        <table class="timing-table">
+            <thead>
+                <tr>
+                    <th>Day</th>
+                    <th>Morning</th>
+                    <th>Afternoon</th>
+                    <th>Evening</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Indian Classical Dance -->
+                <tr class="category">
+                    <td colspan="4"><h4>Indian Classical</h4></td>
+                </tr>
+                <tr>
+                    <td>Monday</td>
+                    <td>Bharatnatyam: 9:00 AM - 10:00 AM</td>
+                    <td>Kathak: 1:00 PM - 2:00 PM</td>
+                    <td>Kathakali: 6:00 PM - 7:00 PM</td>
+                </tr>
+                <tr>
+                    <td>Wednesday</td>
+                    <td>Bharatnatyam: 9:00 AM - 10:00 AM</td>
+                    <td>Kathak: 1:00 PM - 2:00 PM</td>
+                    <td>Kathakali: 6:00 PM - 7:00 PM</td>
+                </tr>
+                <tr>
+                    <td>Friday</td>
+                    <td>Bharatnatyam: 9:00 AM - 10:00 AM</td>
+                    <td>Kathak: 1:00 PM - 2:00 PM</td>
+                    <td>Kathakali: 6:00 PM - 7:00 PM</td>
+                </tr>
+                <tr>
+                    <td>Saturday</td>
+                    <td>Bharatnatyam: 9:00 AM - 10:00 AM</td>
+                    <td>Kathak: 1:00 PM - 2:00 PM</td>
+                    <td>Kathakali: 3:00 PM - 4:00 PM</td>
+                </tr>
+
+                <!-- Afro American Dance -->
+                <tr class="category">
+                    <td colspan="4"><h4>Afro American</h4></td>
+                </tr>
+                <tr>
+                    <td>Monday</td>
+                    <td>Hip Hop: 10:00 AM - 11:00 AM</td>
+                    <td>Jazz: 2:00 PM - 3:00 PM</td>
+                    <td>Tap Dance: 7:00 PM - 8:00 PM</td>
+                </tr>
+                <tr>
+                    <td>Wednesday</td>
+                    <td>Hip Hop: 10:00 AM - 11:00 AM</td>
+                    <td>Jazz: 2:00 PM - 3:00 PM</td>
+                    <td>Tap Dance: 7:00 PM - 8:00 PM</td>
+                </tr>
+                <tr>
+                    <td>Friday</td>
+                    <td>Hip Hop: 10:00 AM - 11:00 AM</td>
+                    <td>Jazz: 2:00 PM - 3:00 PM</td>
+                    <td>Tap Dance: 7:00 PM - 8:00 PM</td>
+                </tr>
+                <tr>
+                    <td>Saturday</td>
+                    <td>Hip Hop: 10:00 AM - 11:00 AM</td>
+                    <td>Jazz: 2:00 PM - 3:00 PM</td>
+                    <td>Tap Dance: 4:00 PM - 5:00 PM</td>
+                </tr>
+
+                <!-- Latin Dance -->
+                <tr class="category">
+                    <td colspan="4"><h4>Latin</h4></td>
+                </tr>
+                <tr>
+                    <td>Monday</td>
+                    <td>Rumba: 11:00 AM - 12:00 PM</td>
+                    <td>Salsa: 3:00 PM - 4:00 PM</td>
+                    <td>ChaCha: 8:00 PM - 9:00 PM</td>
+                </tr>
+                <tr>
+                    <td>Wednesday</td>
+                    <td>Rumba: 11:00 AM - 12:00 PM</td>
+                    <td>Salsa: 3:00 PM - 4:00 PM</td>
+                    <td>ChaCha: 8:00 PM - 9:00 PM</td>
+                </tr>
+                <tr>
+                    <td>Friday</td>
+                    <td>Rumba: 11:00 AM - 12:00 PM</td>
+                    <td>Salsa: 3:00 PM - 4:00 PM</td>
+                    <td>ChaCha: 8:00 PM - 9:00 PM</td>
+                </tr>
+                <tr>
+                    <td>Saturday</td>
+                    <td>Rumba: 11:00 AM - 12:00 PM</td>
+                    <td>Salsa: 2:00 PM - 3:00 PM</td>
+                    <td>ChaCha: 3:00 PM - 4:00 PM</td>
+                </tr>
+
+                <!-- Street Dance -->
+                <tr class="category">
+                    <td colspan="4"><h4>Street Dance</h4></td>
+                </tr>
+                <tr>
+                    <td>Monday</td>
+                    <td>Break Dance: 12:00 PM - 1:00 PM</td>
+                    <td>Popping: 4:00 PM - 5:00 PM</td>
+                    <td>Locking: 8:00 PM - 9:00 PM</td>
+                </tr>
+                <tr>
+                    <td>Wednesday</td>
+                    <td>Break Dance: 12:00 PM - 1:00 PM</td>
+                    <td>Popping: 4:00 PM - 5:00 PM</td>
+                    <td>Locking: 8:00 PM - 9:00 PM</td>
+                </tr>
+                <tr>
+                    <td>Friday</td>
+                    <td>Break Dance: 12:00 PM - 1:00 PM</td>
+                    <td>Popping: 4:00 PM - 5:00 PM</td>
+                    <td>Locking: 8:00 PM - 9:00 PM</td>
+                </tr>
+                <tr>
+                    <td>Saturday</td>
+                    <td>Break Dance: 12:00 PM - 1:00 PM</td>
+                    <td>Popping: 2:00 PM - 3:00 PM</td>
+                    <td>Locking: 4:00 PM - 5:00 PM</td>
+                </tr>
+
+            <!-- Zumba -->
+            <tr class="category">
+                <td colspan="4"><h4>Zumba</h4></td>
+            </tr>
+            <tr>
+                <td>Monday</td>
+                <td>Zumba Kids: 10:00 AM - 11:00 AM</td>
+                <td>Zumba Toning: 2:00 PM - 3:00 PM</td>
+                <td>Zumba Step: 6:00 PM - 7:00 PM</td>
+            </tr>
+            <tr>
+                <td>Wednesday</td>
+                <td>Zumba Kids: 10:00 AM - 11:00 AM</td>
+                <td>Zumba Toning: 2:00 PM - 3:00 PM</td>
+                <td>Zumba Step: 6:00 PM - 7:00 PM</td>
+            </tr>
+            <tr>
+                <td>Friday</td>
+                <td>Zumba Kids: 10:00 AM - 11:00 AM</td>
+                <td>Zumba Toning: 2:00 PM - 3:00 PM</td>
+                <td>Zumba Step: 6:00 PM - 7:00 PM</td>
+            </tr>
+            <tr>
+                <td>Saturday</td>
+                <td>Zumba Kids: 10:00 AM - 11:00 AM</td>
+                <td>Zumba Toning: 1:00 PM - 2:00 PM</td>
+                <td>Zumba Step: 3:00 PM - 4:00 PM</td>
+            </tr>
+
+            <!-- Ballet -->
+            <tr class="category">
+                <td colspan="4"><h4>Ballet</h4></td>
+            </tr>
+            <tr>
+                <td>Monday</td>
+                <td>Classical Ballet: 9:00 AM - 10:00 AM</td>
+                <td>Neo-Classical Ballet: 1:00 PM - 2:00 PM</td>
+                <td>Romantic Ballet: 6:00 PM - 7:00 PM</td>
+            </tr>
+            <tr>
+                <td>Wednesday</td>
+                <td>Classical Ballet: 9:00 AM - 10:00 AM</td>
+                <td>Neo-Classical Ballet: 1:00 PM - 2:00 PM</td>
+                <td>Romantic Ballet: 6:00 PM - 7:00 PM</td>
+            </tr>
+            <tr>
+                <td>Friday</td>
+                <td>Classical Ballet: 9:00 AM - 10:00 AM</td>
+                <td>Neo-Classical Ballet: 1:00 PM - 2:00 PM</td>
+                <td>Romantic Ballet: 6:00 PM - 7:00 PM</td>
+            </tr>
+            <tr>
+                <td>Saturday</td>
+                <td>Classical Ballet: 9:00 AM - 10:00 AM</td>
+                <td>Neo-Classical Ballet: 1:00 PM - 2:00 PM</td>
+                <td>Romantic Ballet: 3:00 PM - 4:00 PM</td>
+            </tr>
+
+            <!-- Fitness -->
+            <tr class="category">
+                <td colspan="4"><h4>Fitness</h4></td>
+            </tr>
+            <tr>
+                <td>Monday</td>
+                <td>Dance Cardio: 10:00 AM - 11:00 AM</td>
+                <td>Dance HIIT: 2:00 PM - 3:00 PM</td>
+                <td>Barre Dance: 6:00 PM - 7:00 PM</td>
+            </tr>
+            <tr>
+                <td>Wednesday</td>
+                <td>Dance Cardio: 10:00 AM - 11:00 AM</td>
+                <td>Dance HIIT: 2:00 PM - 3:00 PM</td>
+                <td>Barre Dance: 6:00 PM - 7:00 PM</td>
+            </tr>
+            <tr>
+                <td>Friday</td>
+                <td>Dance Cardio: 10:00 AM - 11:00 AM</td>
+                <td>Dance HIIT: 2:00 PM - 3:00 PM</td>
+                <td>Barre Dance: 6:00 PM - 7:00 PM</td>
+            </tr>
+            <tr>
+                <td>Saturday</td>
+                <td>Dance Cardio: 10:00 AM - 11:00 AM</td>
+                <td>Dance HIIT: 1:00 PM - 2:00 PM</td>
+                <td>Barre Dance: 3:00 PM - 4:00 PM</td>
+            </tr>
+
+            <!-- Fusion -->
+            <tr class="category">
+                <td colspan="4"><h4>Fusion</h4></td>
+            </tr>
+            <tr>
+                <td>Monday</td>
+                <td>Bollywood: 11:00 AM - 12:00 PM</td>
+                <td>Ballet-Jazz Fusion: 3:00 PM - 4:00 PM</td>
+                <td>Hip Hop-Contemporary Fusion: 7:00 PM - 8:00 PM</td>
+            </tr>
+            <tr>
+                <td>Wednesday</td>
+                <td>Bollywood: 11:00 AM - 12:00 PM</td>
+                <td>Ballet-Jazz Fusion: 3:00 PM - 4:00 PM</td>
+                <td>Hip Hop-Contemporary Fusion: 7:00 PM - 8:00 PM</td>
+            </tr>
+            <tr>
+                <td>Friday</td>
+                <td>Bollywood: 11:00 AM - 12:00 PM</td>
+                <td>Ballet-Jazz Fusion: 3:00 PM - 4:00 PM</td>
+                <td>Hip Hop-Contemporary Fusion: 7:00 PM - 8:00 PM</td>
+            </tr>
+            <tr>
+                <td>Saturday</td>
+                <td>Bollywood: 11:00 AM - 12:00 PM</td>
+                <td>Ballet-Jazz Fusion: 1:00 PM - 2:00 PM</td>
+                <td>Hip Hop-Contemporary Fusion: 4:00 PM - 5:00 PM</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer text-center">
+        <p>&copy; 2024 Your Dance Academy. All rights reserved.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

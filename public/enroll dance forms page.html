@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Approve Payment - Amazing Dance Academy</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* CSS Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #EDC7B7;
+        }
+
+        .navbar {
+            padding: 20px;
+            background-color: #123C69; /* Purple color */
+        }
+
+        .navbar-brand, .nav-link {
+            color: #fff !important;
+            margin-left: 15px;
+        }
+
+        .footer {
+            background-color: #123C69; /* Purple background */
+            color: white; /* White text color */
+            text-align: center;
+            padding: 15px 0;
+            position: relative;
+            width: 100%;
+            margin-top: 40px;
+        }
+
+        .footer p {
+            margin: 0;
+            font-size: 1em;
+        }
+
+        .logo {
+            height: 70px;
+        }
+
+        h1 {
+            margin-top: 40px;
+        }
+
+        /* Table styles */
+        .table {
+            background-color: #ffffff; /* White background for the table */
+        }
+
+        .table thead th {
+            background-color: #f8f9fa; /* Light gray background for the header */
+        }
+
+        .table tbody tr:nth-child(even) {
+            background-color: #f2f2f2; /* Alternate row background color for better readability */
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#">
+            <img class="logo" src="bhuumika/Logo.png" alt="Dance Academy Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="service.html">Our Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="instructorsss.html">Our Instructors</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="schedule.html">Schedule</a></li>
+                <li class="nav-item"><a class="nav-link" href="register.php">Register</a></li>
+                <li class="nav-item"><a class="nav-link" href="login.php">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+       <div class="container">
+        <h1>Enroll in a Dance Form</h1>
+        <div class="container mt-5">
+            <form id="enroll-form" action="/submit-enrollment" method="post">
+                <div class="form-group">
+                    <label for="danceCategory">Dance Category</label>
+                    <select id="danceCategory" class="form-control" name="danceCategory" required>
+                        <option value="" disabled selected>Select your Category</option>
+                        <option value="indian_classical">Indian Classical</option>
+                        <option value="afro_american">Afro-American</option>
+                        <option value="latin">Latin</option>
+                        <option value="street_dance">Street Dance</option>
+                        <option value="zumba">Zumba</option>
+                        <option value="ballet">Ballet</option>
+                        <option value="fitness">Fitness</option>
+                        <option value="fusion">Fusion</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="danceForm">Dance Form</label>
+                    <select id="danceForm" class="form-control" name="danceForm" required>
+                        <option value="" disabled selected>Select a Dance Form</option>
+                        <!-- Options will be dynamically populated -->
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary">Enroll Now</button>
+            </form>
+        </div>
+    </div>
+    </div>
+
+   
+    <script>
+        // Object mapping categories to their respective dance forms
+        const danceForms = {
+            "indian_classical": ["Bharatnatyam", "Kathak", "Kathakali", "Kuchipudi"],
+            "afro_american": ["Hip Hop", "Jazz", "Tap Dance", "Break Dance"],
+            "latin": ["Rumba", "Salsa", "Cha-Cha"],
+            "street_dance": ["Break Dance", "Locking", "Popping"],
+            "zumba": ["Zumba Kids", "Zumba Toning", "Zumba Step"],
+            "ballet": ["Classical Ballet", "Neo-Classical Ballet", "Romantic Ballet"],
+            "fitness": ["Dance Cardio", "Dance HIIT", "Barre Dance"],
+            "fusion": ["Bollywood", "Ballet-Jazz Fusion", "Hip Hop-Contemporary Fusion"]
+        };
+
+        // Function to update the dance form options
+        function updateDanceForms() {
+            const categorySelect = document.getElementById("danceCategory");
+            const formSelect = document.getElementById("danceForm");
+
+            // Clear the existing options in the dance form dropdown
+            formSelect.innerHTML = "<option value='' disabled selected>Select a Dance Form</option>";
+
+            // Get the selected category
+            const selectedCategory = categorySelect.value;
+
+            // Get the dance forms for the selected category
+            const forms = danceForms[selectedCategory] || [];
+
+            // Populate the dance form dropdown with new options
+            forms.forEach(form => {
+                const option = document.createElement("option");
+                option.value = form.toLowerCase().replace(/\s+/g, "_"); // Convert to a suitable value format
+                option.textContent = form;
+                formSelect.appendChild(option);
+            });
+        }
+
+        // Attach the function to the change event of the category dropdown
+        document.getElementById("danceCategory").addEventListener("change", updateDanceForms);
+
+        // Optional: Handling form submission and redirection (if required)
+        document.getElementById("enroll-form").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent the default form submission
+            alert("Congratulations, you are now enrolled in the selected dance form!");
+            window.location.href = "index.html"; // Redirect to homepage or any other page
+        });
+    </script>
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 Amazing Dance Academy</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>

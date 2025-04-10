@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instructors - Dance Academy</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #EDC7B7; /* Updated background color */
+            margin: 0;
+            padding: 0;
+        }
+        .instructor {
+            display: flex;
+            margin-bottom: 50px;
+        }
+        .instructor:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+        .instructor img {
+            width: 300px;
+            height: auto;
+            border-radius: 8px;
+            margin: 0 20px;
+        }
+        .info {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .info h2 {
+            margin: 0 0 15px;
+            margin-left: 20px;
+        }
+        .info p {
+            margin: 2;
+            font-size:large;
+            margin-left: 20px;
+        }
+        .navbar {
+            padding: 20px;
+            background-color: #123C69; /* Dark blue color */
+        }
+        .navbar-brand, .nav-link {
+            color: #fff !important;
+            margin-left: 15px;
+        }
+        .container-title {
+            text-align: center;
+            margin: 50px 0;
+        }
+        .banner-container {
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f8f9fa; /* Light background color */
+        }
+        .banner {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+        footer {
+            background-color: #123C69; /* Dark blue color */
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            position: relative;
+            width: 100%;
+        }
+        .logo {
+            height: 70px;
+        }
+        .content {
+            margin-top: 100px; /* Space for fixed header */
+            margin-bottom: 80px; /* Space for fixed footer */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <a class="navbar-brand" href="#">
+                <img class="logo" src="bhuumika/Logo.png" alt="Dance Academy Logo">
+                <span> Dance Academy</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="service.html">Our Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="instructorsss.html">Our Instructors</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.php">Contact Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="schedule.html">Schedule </a></li>
+                    <li class="nav-item"><a class="nav-link" href="register.php">Register</a></li>
+                    <li class="nav-item"><a class="nav-link" href="login.php">Login</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Banner Image Container -->
+    <div class="banner-container">
+        <img src="bhuumika/staff.jpg" alt="Banner Image" class="banner">
+    </div>
+
+    <!-- Instructors Content -->
+    <div class="container-title">
+        <h2>OUR INSTRUCTORS</h2>
+    </div>
+    <!-- Content -->
+        <div class="instructor">
+            <img src="bhuumika/aishwarya rao indian classical.jpg" alt="Indian Classical Instructor">
+            <div class="info">
+                <h2> Aishwarya Rao - Indian Classical Instructor</h2>
+                <p>Aishwarya Rao is a distinguished Indian Classical dance instructor with over 15 years of experience in Bharatnatyam, Kathak, Kathakali, and Kuchipudi. Trained under the tutelage of some of India’s most revered dance masters, Aishwarya has performed on prestigious stages across the country. Her deep understanding of the spiritual and cultural essence of these dance forms allows her to teach with authenticity and passion. Aishwarya is committed to passing on the rich traditions of Indian Classical dance to the next generation, and her teaching style is known for its precision, grace, and attention to detail. She believes in nurturing each student’s unique potential, encouraging them to connect with the stories and emotions behind every movement.</p>
+            </div>
+        </div>
+
+        <div class="instructor">
+            <img src="bhuumika/rohan iyer afro american.jpg" alt=" Afro-American Dance Instructor">
+            <div class="info">
+                <h2> Rohan Iyer - Afro-American Dance Instructor</h2>
+                <p>Rohan Iyer is a dynamic and versatile Afro-American dance instructor with over a decade of experience in Hip Hop, Jazz, Tap Dance, and Break Dance. Having trained extensively in the United States with leading dance professionals, Rohan brings a unique blend of cultural authenticity and modern flair to his teaching. His classes are known for their high energy, creativity, and the ability to inspire students to express themselves through movement. Rohan’s approach to dance education is both structured and flexible, allowing students to master foundational techniques while exploring their own creative style. He is passionate about making dance accessible to everyone and believes in the transformative power of dance as a form of self-expression and empowerment.</p>
+            </div>
+        </div>
+
+        <div class="instructor">
+            <img src="bhuumika/Isabella Fernandes Latin Dance.jpg" alt=" Latin Dance Instructor">
+            <div class="info">
+                <h2>Isabella Fernandes - Latin Dance Instructorr</h2>
+                <p>Isabella Fernandes is a celebrated Latin dance instructor with over 12 years of experience in Rumba, Salsa, and Cha-Cha. Born into a family of dancers, Isabella’s passion for Latin rhythms was ignited at a young age. She has since honed her craft through rigorous training and numerous performances across Latin America and Europe. Isabella’s classes are a vibrant celebration of Latin culture, where students are immersed in the rich history and passionate energy of each dance form. Known for her graceful movements and ability to convey the emotion and storytelling inherent in Latin dance, Isabella is dedicated to helping her students find joy and confidence on the dance floor. Her teaching style is supportive and engaging, making even the most complex steps feel achievable.
+
+                </p>
+            </div>
+        </div>
+
+        <div class="instructor">
+            <img src="bhuumika/Akash Mehta - Street Dancer.jpg" alt=" Street Dance Instructor">
+            <div class="info">
+                <h2>Akash Mehta - Street Dance Instructor</h2>
+                <p>Akash Mehta is a street dance powerhouse with over 10 years of experience in Break Dance, Locking, and Popping. Starting his dance journey in the underground scene, Akash has developed a deep connection with the raw and expressive nature of street dance. His unique style combines intricate footwork, powerful moves, and a strong sense of rhythm. Akash’s classes are known for their intensity and creativity, pushing students to explore their limits and discover their personal style. He is passionate about the cultural roots of street dance and incorporates its history and philosophy into his teaching. Akash believes that street dance is more than just a form of entertainment—it’s a way of life, a means of self-expression, and a powerful tool for building community.</p>
+            </div>
+        </div>
+
+        <div class="instructor">
+            <img src="bhuumika/Priya Kapoor - Zumba dancer.jpg" alt="Zumba Instructor">
+            <div class="info">
+                <h2> Priya Kapoor - Zumba Instructor</h2>
+                <p>Priya Kapoor is a vibrant and enthusiastic Zumba instructor with over 8 years of experience in leading Zumba Kids, Zumba Toning, and Zumba Step classes. With a background in dance and fitness, Priya’s classes are a fusion of fun, fitness, and high-energy dance routines that cater to all ages and abilities. Her infectious energy and motivational teaching style make her classes a favorite among students looking to stay fit while having fun. Priya’s approach to Zumba is inclusive and supportive, ensuring that everyone feels welcome and capable, regardless of their fitness level. She believes that fitness should be enjoyable and that dancing is a perfect way to achieve a healthy lifestyle while releasing stress and building confidence.</p>
+            </div>
+        </div>
+
+        <div class="instructor">
+            <img src="bhuumika/ananya sen ballet dancer.jpg" alt="Zumba Instructor">
+            <div class="info">
+                <h2>Ananya Sen - Ballet Instructor</h2>
+                <p>Ananya Sen is a classically trained ballet dancer with a wealth of experience in Classical, Neo-Classical, and Romantic Ballet. Having performed with renowned ballet companies in Europe and the United States, Ananya brings a global perspective to her teaching. She is known for her exceptional technique, grace, and the ability to convey deep emotion through movement. Ananya’s classes are designed to build strong technical foundations while nurturing each student’s artistic expression. She believes that ballet is not just about mastering steps, but about telling stories and expressing the soul through dance. Ananya’s teaching style is disciplined yet encouraging, and she is dedicated to helping each dancer reach their full potential, whether they are aspiring professionals or passionate amateurs.</p>
+            </div>
+        </div>
+
+        <div class="instructor">
+            <img src="bhuumika/vikram nair fitness dancer.jpg" alt="Zumba Instructor">
+            <div class="info">
+                <h2> Vikram Nair - Fitness Instructor</h2>
+                <p>Vikram Nair is a seasoned fitness professional specializing in dance-based fitness programs like Dance Cardio, Dance HIIT, and Barre Dance. With over 10 years of experience in the fitness industry, Vikram has a reputation for creating high-intensity, effective workout routines that are as enjoyable as they are challenging. His classes are known for their upbeat energy, innovative choreography, and ability to deliver results. Vikram’s approach to fitness is holistic, focusing not only on physical strength but also on mental well-being. He encourages his students to push their limits while ensuring that they have fun and stay motivated. Vikram believes that dance is a powerful tool for achieving overall health and happiness, and he is committed to helping his students lead healthier, more active lives.</p>
+            </div>
+        </div>
+
+        <div class="instructor">
+            <img src="bhuumika/meera sharma fusion dancer.jpg" alt="Zumba Instructor">
+            <div class="info">
+                <h2> Meera Sharma - Fusion Dance Instructor</h2>
+                <p>Meera Sharma is a trailblazer in the world of fusion dance, combining elements of Bollywood, Ballet-Jazz Fusion, and Hip Hop-Contemporary Fusion to create unique and innovative performances. With over 10 years of experience, Meera has made a name for herself as a versatile and creative choreographer. Her classes are a melting pot of different dance styles, encouraging students to experiment and explore their creativity. Meera’s teaching style is inclusive and inspiring, making her classes accessible to dancers of all levels. She believes in breaking the boundaries of traditional dance forms to create something new and exciting. Meera is passionate about fostering a love for dance in her students, helping them to find their unique voice and express themselves through movement.</p>
+            </div>
+        </div>
+
+      
+   
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Dance Academy. All rights reserved.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>

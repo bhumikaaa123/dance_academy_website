@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazing Dance Academy</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* CSS Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #EDC7B7;
+            margin: 0;
+        }
+
+        .navbar {
+            padding: 20px;
+            background-color: #123C69; /* Purple color */
+        }
+
+        .navbar-brand, .nav-link {
+            color: #fff !important;
+            margin-left: 15px;
+        }
+        .container-title {
+            text-align: center;
+            margin: 50px 0;
+        }
+        .card-container {
+            background-color: #EDC7B7;
+            display: flex;
+            overflow-x: auto;
+            white-space: nowrap;
+            padding: 10px;
+        }
+
+        .card {
+            background-color: #feebeb;
+            flex: 0 0 auto;
+            margin: 40px;
+            width: 18rem;
+        }
+
+        .badge {
+            background-color: gold;
+            color: #000;
+            font-size: 1em;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
+
+        .banner-container {
+            width: 100%; /* Full width */
+            height: auto; /* Set the height to 30% of the viewport height */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f8f9fa; /* Light background color in case there's empty space */
+        }
+
+        .banner {
+            width: 100%; /* Make the image take up the full width */
+            height: auto; /* Adjust the height to maintain aspect ratio */
+            object-fit: cover; /* Ensure the image is fully visible without cropping */
+        }
+
+        /* Footer Styles */
+        .footer {
+            background-color: #123C69; /* Purple background */
+            color: white; /* White text color */
+            text-align: center;
+            padding: 15px 0;
+            position: relative;
+            width: 100%;
+        }
+
+        .footer p {
+            margin: 0;
+            font-size: 1em;
+        }
+
+        .logo{
+            height:70px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#">
+            <img  class="logo" src="bhuumika/Logo.png" alt="Dance Academy Logo">
+                <span> Dance Academy</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="service.html">Our Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="instructorsss.html">Our Instructors</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.php">Contact Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="schedule.html">Schedule </a></li>
+                <li class="nav-item"><a class="nav-link" href="register.php">Register</a></li>
+                <li class="nav-item"><a class="nav-link" href="login.php">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Banner Image Container -->
+    <div class="banner-container">
+        <img src="bhuumika/service.jpg" alt="Banner Image" class="banner">
+    </div>
+
+    <!-- Service Title -->
+    <div class="container-title">
+        <h2>OUR SERVICES</h2>
+    </div>
+
+     <!-- Dance Categories -->
+     <div class="card-container">
+        <div class="card">
+            <img src="./bhuumika/indian_classical.jpg" class="card-img-top" alt="Indian Classical">
+            <div class="card-body">
+                <span class="badge">Popular</span>
+                <h5 class="card-title">Indian Classical</h5>
+                <a href="indian classical types.php" class="btn btn-primary">View Dance Forms</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="./bhuumika/afro_american.jpg" class="card-img-top" alt="Afro-American">
+            <div class="card-body">
+                <span class="badge">Trending</span>
+                <h5 class="card-title">Afro-American</h5>
+                <a href="afro american types.php" class="btn btn-primary">View Dance Forms</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="./bhuumika/latin.jpg" class="card-img-top" alt="Latin">
+            <div class="card-body">
+                <span class="badge">Popular</span>
+                <h5 class="card-title">Latin</h5>
+                <a href="latin dance type.php" class="btn btn-primary">View Dance Forms</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="./bhuumika/street.jpg" class="card-img-top" alt="Street Dance">
+            <div class="card-body">
+                <span class="badge">Popular</span>
+                <h5 class="card-title">Street Dance</h5>
+                <a href="street dance types.php" class="btn btn-primary">View Dance Forms</a>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="card-container">
+        <div class="card">
+            <img src="./bhuumika/zumba.jpg" class="card-img-top" alt="Zumba">
+            <div class="card-body">
+                <span class="badge">Popular</span>
+                <h5 class="card-title">Zumba</h5>
+                <a href="zumba dance types.php" class="btn btn-primary">View Dance Forms</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="./bhuumika/ballet.jpg" class="card-img-top" alt="Ballet">
+            <div class="card-body">
+                <span class="badge">Classic</span>
+                <h5 class="card-title">Ballet</h5>
+                <a href="ballet dance types.php" class="btn btn-primary">View Dance Forms</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="./bhuumika/fitness.jpg" class="card-img-top" alt="Fitness Dance">
+            <div class="card-body">
+                <span class="badge">Popular</span>
+                <h5 class="card-title">Fitness Dance</h5>
+                <a href="fitness dance style.php" class="btn btn-primary">View Dance Forms</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="./bhuumika/fusion.jpg" class="card-img-top" alt="Fusion">
+            <div class="card-body">
+                <span class="badge">Popular</span>
+                <h5 class="card-title">Fusion</h5>
+                <a href="fusion dance style.php" class="btn btn-primary">View Dance Forms</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer text-center">
+        <p>&copy; 2024 Your Dance Academy. All rights reserved.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

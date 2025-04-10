@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazing Dance Academy</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* CSS Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #EDC7B7;
+            margin: 0;
+        }
+
+        .navbar {
+            padding: 20px;
+            background-color: #123C69; /* Purple color */
+        }
+
+        .navbar-brand, .nav-link {
+            color: #fff !important;
+            margin-left: 15px;
+        }
+        .container-title {
+            text-align: center;
+            margin: 50px 0;
+        }
+        .banner-container {
+            width: 100%; /* Full width */
+            height: auto; /* Set the height to 30% of the viewport height */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f8f9fa; /* Light background color in case there's empty space */
+        }
+
+        .banner {
+            width: 100%; /* Make the image take up the full width */
+            height: auto; /* Adjust the height to maintain aspect ratio */
+            object-fit: cover; /* Ensure the image is fully visible without cropping */
+        }
+
+        /* Footer Styles */
+        .footer {
+            background-color: #123C69; /* Purple background */
+            color: white; /* White text color */
+            text-align: center;
+            padding: 15px 0;
+            position: relative;
+            width: 100%;
+        }
+
+        .footer p {
+            margin: 0;
+            font-size: 1em;
+        }
+       
+        .banner h1 {
+            font-size: 2em;
+            color: #333;
+            text-align: center;
+        }
+
+        .about-section {
+            display: flex;
+            padding: 50px;
+            background-color: #EDC7B7;
+        }
+
+        .about-image {
+            flex: 1;
+            margin-right: 50px;
+        }
+
+        .about-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .about-text {
+            flex: 2;
+            color: #333;
+        }
+
+        .about-text h2 {
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            color: #000;
+        }
+
+        .about-text p {
+            margin-bottom: 15px;
+            line-height: 1.6;
+        }
+
+        .about-text a {
+            color: #333;
+            text-decoration: underline;
+        }
+
+        .about-text a:hover {
+            color: #e74c3c;
+        }
+        .container-title {
+            text-align: center;
+            margin: 50px 0;
+        }
+        
+        .banner-container {
+            width: 100%; /* Full width */
+            height: auto; /* Set the height to 30% of the viewport height */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f8f9fa; /* Light background color in case there's empty space */
+        }
+
+        .banner {
+            width: 100%; /* Make the image take up the full width */
+            height: auto; /* Adjust the height to maintain aspect ratio */
+            object-fit: cover; /* Ensure the image is fully visible without cropping */
+        }
+       
+
+.dance-styles h1 {
+    font-size: 36px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+
+.dance-categories {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+.dance-card {
+    background-color: #feebeb;
+    flex: 0 0 auto;
+    margin: 15px;
+    width: 20rem;
+    height: 25rem; /* Fixed height for all cards */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Aligns content to the top */
+    align-items: center;
+}
+
+.dance-card img {
+    width: 100%;
+    height: 70%; /* Adjust image height */
+    object-fit: cover; /* Keeps the image aspect ratio while covering the area */
+}
+
+.dance-card p {
+    font-size: 18px;
+    margin: 5px 0 5px 0; /* Reduced space above and below the text */
+    color: #333;
+    text-align: center;
+    flex-grow: 1; /* Allows the paragraph to take available space */
+    display: flex;
+    align-items: center; /* Vertically centers text if there's extra space */
+    justify-content: center; /* Horizontally centers text */
+}
+
+
+
+.logo{
+    height:70px;
+}
+
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#">
+            <img  class="logo" src="bhuumika/Logo.png" alt="Dance Academy Logo">
+                <span> Dance Academy</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="service.html">Our Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="instructorsss.html">Our Instructors</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.php">Contact Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="schedule.html">Schedule </a></li>
+                <li class="nav-item"><a class="nav-link" href="register.php">Register</a></li>
+                <li class="nav-item"><a class="nav-link" href="login.php">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Banner Image Container -->
+    <div class="banner-container">
+        <img src="bhuumika/about us.jpg" alt="Banner Image" class="banner">
+    </div>
+
+   <!-- Service Title -->
+   <div class="container-title">
+    <h2>ABOUT US</h2>
+</div>
+
+ <!-- Banner -->
+ <div class="banner">
+    <h1>JOIN US TODAY FOR YOUR FIRST DANCE CLASS</h1>
+</div>
+
+<!-- About Us Section -->
+<div class="about-section">
+    <div class="about-image">
+        <img src="bhuumika/about.jpg" alt="Dance Image">
+    </div>
+    <div class="about-text">
+        <p>Lets Naccho Academy was established in 2010 with the vision of creating a nurturing and dynamic environment where dance enthusiasts of all ages and skill levels can thrive. Founded by Bhumika Tusamad, a passionate dancer with years of experience, our academy is dedicated to providing high-quality dance education and fostering a community of creativity, expression, and discipline.</p>
+        <p>Since our inception, Lets Naccho Academy has been a beacon of excellence in dance education, offering a diverse range of dance styles including Ballet, Contemporary, Jazz, Hip Hop, and Classical Dance. Our highly skilled instructors are not only experts in their respective fields but also mentors who inspire and guide our students to reach their full potential.</p>
+        <p>At Lets Naccho Academy, we believe in the power of dance as a form of self-expression and a tool for personal growth. Whether you’re a beginner looking to explore the world of dance or an experienced dancer seeking to hone your skills, our academy offers classes that cater to all levels.</p>
+        <p><strong>OUR VISION</strong> - To inspire a lifelong love for dance and to nurture the artistic potential of every student by providing a supportive and challenging environment where creativity, discipline, and excellence are celebrated.</p>
+        <p><strong>OUR MISSION</strong> - Our mission is to make dance accessible to everyone, to empower our students through movement, and to contribute to the cultural richness of our community. We strive to create a welcoming space where students can express themselves freely, develop their skills, and connect with others who share their passion for dance.</p>
+        <p><strong>WHY CHOOSE US?</strong></p>
+        <ul>
+            <li>Expert Instructors: Learn from seasoned professionals who are dedicated to your growth.</li>
+            <li>Diverse Dance Styles: Explore a wide range of dance forms tailored to your interests.</li>
+            <li>Community: Be part of a vibrant and supportive dance community.</li>
+            <li>Performance Opportunities: Showcase your talent through regular recitals and community events.</li>
+            <li>Personal Growth: Develop confidence, discipline, and a love for the art of dance.</li>
+        </ul>
+    </div>
+</div>
+
+
+
+<section class="dance-styles">
+    <h1>Learn A Variety of Dance Styles</h1>
+    <div class="dance-categories">
+        <div class="dance-card">
+            <img src="bhuumika/about hip hop.jpg" alt="Hip Hop">
+            <p>Hip Hop</p>
+        </div>
+        <div class="dance-card">
+            <img src="bhuumika/bollywood.jpg" alt="Contemporary">
+            <p>Bollywood</p>
+        </div>
+        <div class="dance-card">
+            <img src="bhuumika/dance workout.jpg" alt="Dance Workout">
+            <p>Dance Workout</p>
+        </div>
+        <div class="dance-card">
+            <img src="bhuumika/Romantic ballet.jpg" alt="K-Pop">
+            <p>Romantic Ballet</p>
+        </div>
+    </div>
+
+    <div class="dance-categories">
+        <div class="dance-card">
+            <img src="bhuumika/ballet.jpg" alt="Ballet">
+            <p>Ballet</p>
+        </div>
+        <div class="dance-card">
+            <img src="bhuumika/salsa.jpg" alt="Salsa">
+            <p>Salsa</p>
+        </div>
+        <div class="dance-card">
+            <img src="bhuumika/bharatanatyam.jpg" alt="Popping">
+            <p>Bharatnatyam</p>
+        </div>
+        <div class="dance-card">
+            <img src="bhuumika/Jazz.png" alt="Jazz">
+            <p>Jazz</p>
+        </div>
+    </div>
+
+    <div class="dance-categories">
+        <div class="dance-card">
+            <img src="bhuumika/dance hiit.jpg" alt="Lite feet">
+            <p>Dance HIIT</p>
+        </div>
+        <div class="dance-card">
+            <img src="bhuumika/popping.jpg" alt="Heels">
+            <p>Popping</p>
+        </div>
+        <div class="dance-card">
+            <img src="bhuumika/chacha.jpg" alt="House">
+            <p>Cha-Cha</p>
+        </div>
+        <div class="dance-card">
+            <img src="bhuumika/locking.jpg" alt="Locking">
+            <p>Locking</p>
+        </div>
+    </div>
+</section>
+
+
+
+ 
+
+    <!-- Footer -->
+    <footer class="footer text-center">
+        <p>&copy; 2024 Your Dance Academy. All rights reserved.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
